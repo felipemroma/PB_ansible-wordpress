@@ -1,0 +1,8 @@
+- hosts: wordpress
+  remote_user: roma
+  become: yes
+  roles:
+  - server
+  - php
+  - mysql
+  - wordpress
